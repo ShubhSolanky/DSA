@@ -1,34 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Array Traversing</title>
-
+    <title>Traversing</title>
     <script>
 
-      let data = [9, 45, 2, 8, 45, 23, 7, 78, 0, 11, 41, 77];
-      // for(let i=0;i<data.length;i++)
-      // {
-      //     document.write(`Array ${i} is ${data[i]} <br>`)
-      // }
-      // let x=10;
-      // document.write(data[x]);
-      function getElement() {
-        let el = document.getElementById("element").value;
-        if (el < data.length && typeof parseInt(el) === "number") {
-          alert(data[el]);
-        } else {
-          alert("Please enter valid input");
+        let arr = [15, 22, 11, 33, 9, 20, 25, 67, 44, 32];
+
+          for (let i = 0; i < arr.length; i++) {
+             console.log(`Array ${i} arr ${arr[i]}`)
+         }
+  
+
+        // document.write(arr[6]);
+
+
+        function getElement() {
+            let el = document.getElementById('element').value
+
+            if (el < arr.length && typeof parseInt(el) === 'number') {
+                alert(arr[el])
+            }
+            else ("Enter valid value")
+
+ 
         }
-      }
-
-
 
     </script>
 </head>
+
 <body>
-    <input type="text" id="element" placeholder="#"/>
-    <button onclick="getElement()">Get Element</button>
+    <input type="text" id="element" placeholder="enter num">
+    <button onclick="getElement()">Get element</button>
 </body>
+
 </html>
